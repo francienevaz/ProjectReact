@@ -21,8 +21,19 @@ function App() {
     {tweets.map(tweet => {
       return <Tweet text={tweet}/>
     })}
-    <button onClick={createTweet}>Adicionar Tweet</button>
-      </>    
+    <button 
+      onClick={createTweet}
+      style={{
+        backgroundColor: '#8257e6',
+        border: 0,
+        borderRadius:'12px',
+        padding: '6px 12px',
+        color: '#FFF'
+      }}    
+    >
+      Adicionar Tweet
+    </button>
+    </>    
   )
 }
 
